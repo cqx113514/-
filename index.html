@@ -6,14 +6,9 @@
     <title>北子！NB</title>
 
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='55' r='36' fill='%23D4AF37'/%3E%3Cpath d='M18 30 L35 6 L46 30 Z' fill='%23D4AF37'/%3E%3Cpath d='M25 26 L35 12 L42 26 Z' fill='%23F5E6A3'/%3E%3Cpath d='M54 30 L65 6 L82 30 Z' fill='%23D4AF37'/%3E%3Cpath d='M58 26 L65 12 L75 26 Z' fill='%23F5E6A3'/%3E%3Cellipse cx='35' cy='50' rx='8' ry='9' fill='%232D2D2D'/%3E%3Ccircle cx='32' cy='46' r='3' fill='white'/%3E%3Ccircle cx='38' cy='52' r='1.5' fill='white'/%3E%3Cellipse cx='65' cy='50' rx='8' ry='9' fill='%232D2D2D'/%3E%3Ccircle cx='62' cy='46' r='3' fill='white'/%3E%3Ccircle cx='68' cy='52' r='1.5' fill='white'/%3E%3Cpolygon points='46,59 54,59 50,63' fill='%23B8860B'/%3E%3Cpath d='M43 68 Q50 74 57 68' stroke='%232D2D2D' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3Cline x1='10' y1='55' x2='30' y2='59' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='10' y1='62' x2='30' y2='64' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='70' y1='59' x2='90' y2='55' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='70' y1='64' x2='90' y2='62' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cellipse cx='24' cy='64' rx='6' ry='4' fill='%23F5E6A3' opacity='0.4'/%3E%3Cellipse cx='76' cy='64' rx='6' ry='4' fill='%23F5E6A3' opacity='0.4'/%3E%3C/svg%3E" />
-    <link rel="apple-touch-icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='55' r='36' fill='%23D4AF37'/%3E%3Cpath d='M18 30 L35 6 L46 30 Z' fill='%23D4AF37'/%3E%3Cpath d='M25 26 L35 12 L42 26 Z' fill='%23F5E6A3'/%3E%3Cpath d='M54 30 L65 6 L82 30 Z' fill='%23D4AF37'/%3E%3Cpath d='M58 26 L65 12 L75 26 Z' fill='%23F5E6A3'/%3E%3Cellipse cx='35' cy='50' rx='8' ry='9' fill='%232D2D2D'/%3E%3Ccircle cx='32' cy='46' r='3' fill='white'/%3E%3Ccircle cx='38' cy='52' r='1.5' fill='white'/%3E%3Cellipse cx='65' cy='50' rx='8' ry='9' fill='%232D2D2D'/%3E%3Ccircle cx='62' cy='46' r='3' fill='white'/%3E%3Ccircle cx='68' cy='52' r='1.5' fill='white'/%3E%3Cpolygon points='46,59 54,59 50,63' fill='%23B8860B'/%3E%3Cpath d='M43 68 Q50 74 57 68' stroke='%232D2D2D' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3Cline x1='10' y1='55' x2='30' y2='59' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='10' y1='62' x2='30' y2='64' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='70' y1='59' x2='90' y2='55' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='70' y1='64' x2='90' y2='62' stroke='%232D2D2D' stroke-width='1.5' stroke-linecap='round'/%3E%3Cellipse cx='24' cy='64' rx='6' ry='4' fill='%23F5E6A3' opacity='0.4'/%3E%3Cellipse cx='76' cy='64' rx='6' ry='4' fill='%23F5E6A3' opacity='0.4'/%3E%3C/svg%3E" />
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             background-image: url('https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZrIlqimvLuWJ2rLTqJ60yWkBSfQIGsQACcicAAkreUVS3acnz8W7Itj0E.png');
@@ -212,6 +207,28 @@
             color: #b8a88a;
         }
 
+        .doom-area {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .doom-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #d4af37;
+            margin-bottom: 0.8rem;
+        }
+
+        .doom-area canvas {
+            width: 100%;
+            border-radius: 12px;
+            image-rendering: pixelated;
+        }
+
         .ip-footer {
             margin-top: 1.8rem;
             padding-top: 1.2rem;
@@ -234,10 +251,7 @@
             gap: 0.4rem 0.6rem;
         }
 
-        .ip-label {
-            opacity: 0.75;
-            font-weight: 300;
-        }
+        .ip-label { opacity: 0.75; font-weight: 300; }
 
         .ip-address {
             font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
@@ -262,15 +276,10 @@
             padding: 0.25rem 1.2rem;
             border-radius: 40px;
             border: 1px solid rgba(212, 175, 55, 0.15);
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
             animation: warningPulse 2.4s ease-in-out infinite;
         }
 
-        .ip-warning .lightning {
-            display: inline-block;
-            animation: lightningFlicker 1.8s ease-in-out infinite alternate;
-        }
+        .ip-warning .lightning { animation: lightningFlicker 1.8s ease-in-out infinite alternate; }
 
         @keyframes warningPulse {
             0%, 100% { opacity: 0.7; transform: scale(1); }
@@ -283,75 +292,23 @@
             100% { opacity: 1; }
         }
 
-        .ip-address.loading::after {
-            content: '';
-            animation: dots 1.4s steps(4, end) infinite;
-        }
-
-        @keyframes dots {
-            0% { content: ''; }
-            25% { content: '.'; }
-            50% { content: '..'; }
-            75% { content: '...'; }
-            100% { content: ''; }
-        }
-
         @media (max-width: 550px) {
-            h1 {
-                font-size: 3.8rem;
-                letter-spacing: 4px;
-            }
-            .brand-card {
-                padding: 1.8rem 1.5rem;
-            }
-            .btn {
-                font-size: 1.0rem;
-                padding: 0.75rem 1rem;
-                min-width: 120px;
-                flex: 1 1 140px;
-            }
-            .sub {
-                font-size: 0.75rem;
-                letter-spacing: 4px;
-            }
-            .cat-avatar {
-                font-size: 3.8rem;
-            }
-            .cat-speech {
-                font-size: 1rem;
-                padding: 0.4rem 1.2rem;
-                min-height: 2.8rem;
-            }
-            .game-area {
-                padding: 1rem 0.8rem;
-            }
-            .ip-footer {
-                font-size: 0.85rem;
-                margin-top: 1.4rem;
-                padding-top: 1rem;
-            }
-            .ip-address {
-                font-size: 0.95rem;
-            }
-            .ip-warning {
-                font-size: 0.95rem;
-                padding: 0.2rem 1rem;
-            }
+            h1 { font-size: 3.8rem; letter-spacing: 4px; }
+            .brand-card { padding: 1.8rem 1.5rem; }
+            .btn { font-size: 1.0rem; padding: 0.75rem 1rem; min-width: 120px; flex: 1 1 140px; }
+            .sub { font-size: 0.75rem; letter-spacing: 4px; }
+            .cat-avatar { font-size: 3.8rem; }
+            .cat-speech { font-size: 1rem; padding: 0.4rem 1.2rem; min-height: 2.8rem; }
+            .game-area { padding: 1rem 0.8rem; }
+            .ip-footer { font-size: 0.85rem; margin-top: 1.4rem; padding-top: 1rem; }
+            .ip-address { font-size: 0.95rem; }
+            .ip-warning { font-size: 0.95rem; padding: 0.2rem 1rem; }
         }
 
         @media (max-width: 400px) {
-            .button-group {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .btn {
-                flex: 1 1 auto;
-                width: 100%;
-            }
-            .ip-row {
-                flex-direction: column;
-                gap: 0.2rem;
-            }
+            .button-group { flex-direction: column; align-items: stretch; }
+            .btn { flex: 1 1 auto; width: 100%; }
+            .ip-row { flex-direction: column; gap: 0.2rem; }
         }
     </style>
 </head>
@@ -374,6 +331,11 @@
             </div>
         </div>
 
+        <div class="doom-area">
+            <div class="doom-title">🎮 DOOM</div>
+            <canvas id="doomCanvas" width="640" height="400"></canvas>
+        </div>
+
         <div class="ip-footer">
             <div class="ip-row">
                 <span class="ip-label">🌐 你的IP：</span>
@@ -388,72 +350,45 @@
     </div>
 
     <script>
+        // 猫娘互动
         (function() {
             var speeches = [
-                "喵～ 你好呀！",
-                "今天也元气满满！",
-                "最喜欢你啦 ❤️",
-                "要一起玩吗？",
-                "摸摸头～ (´▽`ʃ♡)ƪ",
-                "北门最棒了！",
-                "嘿嘿，好开心～",
-                "给你小鱼干 🐟",
-                "晚上好喵～",
-                "我超可爱的！",
-                "抱抱～ (*≧▽≦)",
-                "你点我干嘛啦 >_<",
-                "再点我就要生气了！",
-                "骗你的，我才不生气呢",
-                "一起去看星星吧 ✨",
-                "喵喵喵～",
-                "今天的月亮好圆",
-                "要听我唱歌吗？",
-                "我是你的猫娘哦",
-                "最喜欢这个网页了！"
+                "喵～ 你好呀！","今天也元气满满！","最喜欢你啦 ❤️","要一起玩吗？",
+                "摸摸头～ (´▽`ʃ♡)ƪ","北门最棒了！","嘿嘿，好开心～","给你小鱼干 🐟",
+                "晚上好喵～","我超可爱的！","抱抱～ (*≧▽≦)","你点我干嘛啦 >_<",
+                "再点我就要生气了！","骗你的，我才不生气呢","一起去看星星吧 ✨",
+                "喵喵喵～","今天的月亮好圆","要听我唱歌吗？","我是你的猫娘哦","最喜欢这个网页了！"
             ];
-
             var avatar = document.getElementById('catAvatar');
             var speech = document.getElementById('catSpeech');
             var container = document.getElementById('catContainer');
-
             var emojiState = 0;
-            var emojis = ['😺', '😸', '😻', '😽', '🙀', '😹', '🐱', '😼'];
+            var emojis = ['😺','😸','😻','😽','🙀','😹','🐱','😼'];
 
             function getRandomSpeech() {
                 return speeches[Math.floor(Math.random() * speeches.length)];
             }
-
             function nextEmoji() {
                 emojiState = (emojiState + 1) % emojis.length;
                 return emojis[emojiState];
             }
-
             function interact() {
                 avatar.textContent = nextEmoji();
                 speech.textContent = getRandomSpeech();
-
                 avatar.style.transition = 'transform 0.1s';
                 avatar.style.transform = 'scale(1.2)';
-                setTimeout(function() {
-                    avatar.style.transform = 'scale(1)';
-                }, 100);
-
+                setTimeout(function() { avatar.style.transform = 'scale(1)'; }, 100);
                 speech.style.transition = 'background 0.15s';
                 speech.style.background = 'rgba(212, 175, 55, 0.25)';
-                setTimeout(function() {
-                    speech.style.background = 'rgba(0, 0, 0, 0.45)';
-                }, 200);
+                setTimeout(function() { speech.style.background = 'rgba(0, 0, 0, 0.45)'; }, 200);
             }
-
             container.addEventListener('click', interact);
-            container.addEventListener('touchstart', function(e) {
-                interact();
-            }, { passive: true });
+            container.addEventListener('touchstart', function(e) { interact(); }, { passive: true });
         })();
 
+        // IP获取
         (function() {
             var ipEl = document.getElementById('visitorIp');
-
             window.handleIP = function(data) {
                 if (data && data.ip) {
                     ipEl.textContent = data.ip;
@@ -463,14 +398,12 @@
                     ipEl.classList.remove('loading');
                 }
             };
-
             var timeout = setTimeout(function() {
                 if (ipEl.textContent === '获取中') {
                     ipEl.textContent = '26.248.24.232';
                     ipEl.classList.remove('loading');
                 }
             }, 5000);
-
             try {
                 var script = document.createElement('script');
                 script.src = 'https://api.ipify.org?format=jsonp&callback=handleIP';
@@ -489,106 +422,92 @@
                 ipEl.classList.remove('loading');
             }
         })();
+
+        // DOOM
+        (function() {
+            const canvas = document.getElementById('doomCanvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 640;
+            canvas.height = 400;
+
+            const map = [
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1],
+                [1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1],
+                [1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1],
+                [1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
+                [1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1],
+                [1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1],
+                [1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+            ];
+
+            let px = 2.5, py = 2.5, pa = 0;
+            const fov = Math.PI / 3;
+            const keys = {};
+
+            document.addEventListener('keydown', function(e) {
+                keys[e.key.toLowerCase()] = true;
+                e.preventDefault();
+            });
+            document.addEventListener('keyup', function(e) {
+                keys[e.key.toLowerCase()] = false;
+            });
+
+            function move() {
+                const speed = 0.05;
+                const rot = 0.04;
+                if (keys['w'] || keys['arrowup']) {
+                    const nx = px + Math.cos(pa) * speed;
+                    const ny = py + Math.sin(pa) * speed;
+                    if (map[Math.floor(ny)] && map[Math.floor(ny)][Math.floor(nx)] === 0) { px = nx; py = ny; }
+                }
+                if (keys['s'] || keys['arrowdown']) {
+                    const nx = px - Math.cos(pa) * speed;
+                    const ny = py - Math.sin(pa) * speed;
+                    if (map[Math.floor(ny)] && map[Math.floor(ny)][Math.floor(nx)] === 0) { px = nx; py = ny; }
+                }
+                if (keys['a'] || keys['arrowleft']) pa -= rot;
+                if (keys['d'] || keys['arrowright']) pa += rot;
+            }
+
+            function render() {
+                ctx.fillStyle = '#1a1a2e';
+                ctx.fillRect(0, 0, canvas.width, canvas.height / 2);
+                ctx.fillStyle = '#2d2d44';
+                ctx.fillRect(0, canvas.height / 2, canvas.width, canvas.height / 2);
+
+                const rayCount = 320;
+                for (let i = 0; i < rayCount; i++) {
+                    const ra = pa - fov / 2 + fov * (i / rayCount);
+                    let dist = 0;
+                    for (let d = 0; d < 20; d += 0.02) {
+                        dist = d;
+                        const mx = Math.floor(px + Math.cos(ra) * d);
+                        const my = Math.floor(py + Math.sin(ra) * d);
+                        if (map[my] && map[my][mx] === 1) break;
+                    }
+                    const lineH = Math.min(400, 400 / (dist + 0.01) * 1.5);
+                    const shade = Math.max(50, 255 - dist * 12);
+                    ctx.fillStyle = 'rgb(' + shade + ',' + Math.floor(shade * 0.3) + ',' + Math.floor(shade * 0.3) + ')';
+                    ctx.fillRect(i * 2, 200 - lineH / 2, 2.2, lineH);
+                }
+            }
+
+            function loop() {
+                move();
+                render();
+                requestAnimationFrame(loop);
+            }
+            loop();
+        })();
     </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>DOOM</title>
-<style>
-body{margin:0;background:#000;display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden}
-canvas{image-rendering:pixelated}
-</style>
-</head>
-<body>
-<canvas id="c"></canvas>
-<script>
-const canvas=document.getElementById('c');
-const ctx=canvas.getContext('2d');
-canvas.width=640;canvas.height=400;
-
-const map=[
-[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-[1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1],
-[1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1],
-[1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1],
-[1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
-[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-[1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
-[1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1],
-[1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1],
-[1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1],
-[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-];
-
-let px=2.5,py=2.5,pa=0;
-const fov=Math.PI/3;
-const keys={};
-
-document.addEventListener('keydown',e=>{
-    keys[e.key.toLowerCase()]=true;
-    e.preventDefault();
-});
-document.addEventListener('keyup',e=>{
-    keys[e.key.toLowerCase()]=false;
-});
-
-function move(){
-    const speed=0.05;
-    const rot=0.04;
-    if(keys['w']||keys['arrowup']){
-        const nx=px+Math.cos(pa)*speed;
-        const ny=py+Math.sin(pa)*speed;
-        if(map[Math.floor(ny)]&&map[Math.floor(ny)][Math.floor(nx)]===0){px=nx;py=ny;}
-    }
-    if(keys['s']||keys['arrowdown']){
-        const nx=px-Math.cos(pa)*speed;
-        const ny=py-Math.sin(pa)*speed;
-        if(map[Math.floor(ny)]&&map[Math.floor(ny)][Math.floor(nx)]===0){px=nx;py=ny;}
-    }
-    if(keys['a']||keys['arrowleft'])pa-=rot;
-    if(keys['d']||keys['arrowright'])pa+=rot;
-}
-
-function render(){
-    // 天花板
-    ctx.fillStyle='#1a1a2e';
-    ctx.fillRect(0,0,canvas.width,canvas.height/2);
-    // 地板
-    ctx.fillStyle='#2d2d44';
-    ctx.fillRect(0,canvas.height/2,canvas.width,canvas.height/2);
-    
-    const rayCount=320;
-    for(let i=0;i<rayCount;i++){
-        const ra=pa-fov/2+fov*(i/rayCount);
-        let dist=0;
-        let hit=false;
-        for(let d=0;d<20;d+=0.02){
-            dist=d;
-            const mx=Math.floor(px+Math.cos(ra)*d);
-            const my=Math.floor(py+Math.sin(ra)*d);
-            if(map[my]&&map[my][mx]===1){hit=true;break;}
-        }
-        const lineH=Math.min(400,400/(dist+0.01)*1.5);
-        const shade=Math.max(50,255-dist*12);
-        ctx.fillStyle=`rgb(${shade},${Math.floor(shade*0.3)},${Math.floor(shade*0.3)})`;
-        ctx.fillRect(i*2,200-lineH/2,2.2,lineH);
-    }
-}
-
-function loop(){
-    move();
-    render();
-    requestAnimationFrame(loop);
-}
-loop();
-</script>
 </body>
 </html>
