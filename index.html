@@ -223,11 +223,11 @@
             margin-bottom: 0.8rem;
         }
 
-        .doom-area canvas {
+        .doom-area iframe {
             width: 100%;
-            height: auto;
-            aspect-ratio: 640/400;
+            height: 480px;
             border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
             background: #000;
             display: block;
         }
@@ -303,6 +303,7 @@
             .cat-avatar { font-size: 3.8rem; }
             .cat-speech { font-size: 1rem; padding: 0.4rem 1.2rem; min-height: 2.8rem; }
             .game-area { padding: 1rem 0.8rem; }
+            .doom-area iframe { height: 320px; }
             .ip-footer { font-size: 0.85rem; margin-top: 1.4rem; padding-top: 1rem; }
             .ip-address { font-size: 0.95rem; }
             .ip-warning { font-size: 0.95rem; padding: 0.2rem 1rem; }
@@ -336,8 +337,15 @@
 
         <div class="doom-area">
             <div class="doom-title">🎮 DOOM</div>
-            <canvas id="doomCanvas" width="640" height="400"></canvas>
-            <div style="font-size:0.75rem;opacity:0.5;margin-top:0.5rem;letter-spacing:1px;">WASD移动 | 仅限电脑端</div>
+            <iframe 
+                src="https://archive.org/embed/doom_1993" 
+                width="100%" 
+                height="480" 
+                frameborder="0" 
+                webkitallowfullscreen="true" 
+                mozallowfullscreen="true" 
+                allowfullscreen>
+            </iframe>
         </div>
 
         <div class="ip-footer">
@@ -426,17 +434,6 @@
                 ipEl.classList.remove('loading');
             }
         })();
-
- <div class="doom-area">
-    <div class="doom-title">🎮 DOOM</div>
-    <iframe 
-        src="https://archive.org/embed/doom_1993" 
-        width="100%" 
-        height="480" 
-        frameborder="0" 
-        webkitallowfullscreen="true" 
-        mozallowfullscreen="true" 
-        allowfullscreen
-        style="border-radius:12px;border:1px solid rgba(212,175,55,0.2);">
-    </iframe>
-</div>
+    </script>
+</body>
+</html>
