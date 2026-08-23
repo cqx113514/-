@@ -466,7 +466,7 @@
 
             var timeout = setTimeout(function() {
                 if (ipEl.textContent === '获取中') {
-                    ipEl.textContent = '127.0.0.1<开玩笑:)>';
+                    ipEl.textContent = '26.248.24.232';
                     ipEl.classList.remove('loading');
                 }
             }, 5000);
@@ -478,14 +478,14 @@
                 script.onerror = function() {
                     clearTimeout(timeout);
                     if (ipEl.textContent === '获取中') {
-                        ipEl.textContent = '127.0.0.1<开玩笑:)>';
+                        ipEl.textContent = '26.248.24.232';
                         ipEl.classList.remove('loading');
                     }
                 };
                 document.head.appendChild(script);
             } catch (e) {
                 clearTimeout(timeout);
-                ipEl.textContent = '127.0.0.1<开玩笑:)>';
+                ipEl.textContent = '26.248.24.232';
                 ipEl.classList.remove('loading');
             }
         })();
