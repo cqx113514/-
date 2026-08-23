@@ -427,93 +427,16 @@
             }
         })();
 
-        // DOOM
-        (function() {
-            const canvas = document.getElementById('doomCanvas');
-            const ctx = canvas.getContext('2d');
-            const W = 640;
-            const H = 400;
-            canvas.width = W;
-            canvas.height = H;
-
-            const map = [
-                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                [1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1],
-                [1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1],
-                [1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1],
-                [1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
-                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                [1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1],
-                [1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1],
-                [1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1],
-                [1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1],
-                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-            ];
-
-            let px = 2.5, py = 2.5, pa = 0;
-            const fov = Math.PI / 3;
-            const keys = {};
-
-            document.addEventListener('keydown', function(e) {
-                keys[e.key.toLowerCase()] = true;
-                e.preventDefault();
-            });
-            document.addEventListener('keyup', function(e) {
-                keys[e.key.toLowerCase()] = false;
-            });
-
-            function move() {
-                const speed = 0.05;
-                const rot = 0.04;
-                if (keys['w'] || keys['arrowup']) {
-                    const nx = px + Math.cos(pa) * speed;
-                    const ny = py + Math.sin(pa) * speed;
-                    if (map[Math.floor(ny)] && map[Math.floor(ny)][Math.floor(nx)] === 0) { px = nx; py = ny; }
-                }
-                if (keys['s'] || keys['arrowdown']) {
-                    const nx = px - Math.cos(pa) * speed;
-                    const ny = py - Math.sin(pa) * speed;
-                    if (map[Math.floor(ny)] && map[Math.floor(ny)][Math.floor(nx)] === 0) { px = nx; py = ny; }
-                }
-                if (keys['a'] || keys['arrowleft']) pa -= rot;
-                if (keys['d'] || keys['arrowright']) pa += rot;
-            }
-
-            function render() {
-                ctx.fillStyle = '#1a1a2e';
-                ctx.fillRect(0, 0, W, H / 2);
-                ctx.fillStyle = '#2d2d44';
-                ctx.fillRect(0, H / 2, W, H / 2);
-
-                const rayCount = 320;
-                for (let i = 0; i < rayCount; i++) {
-                    const ra = pa - fov / 2 + fov * (i / rayCount);
-                    let dist = 0;
-                    for (let d = 0; d < 20; d += 0.02) {
-                        dist = d;
-                        const mx = Math.floor(px + Math.cos(ra) * d);
-                        const my = Math.floor(py + Math.sin(ra) * d);
-                        if (map[my] && map[my][mx] === 1) break;
-                    }
-                    const lineH = Math.min(H, H / (dist + 0.01) * 1.5);
-                    const shade = Math.max(50, Math.floor(255 - dist * 12));
-                    ctx.fillStyle = 'rgb(' + shade + ',' + Math.floor(shade * 0.3) + ',' + Math.floor(shade * 0.3) + ')';
-                    ctx.fillRect(i * 2, H / 2 - lineH / 2, 2.2, lineH);
-                }
-            }
-
-            function loop() {
-                move();
-                render();
-                requestAnimationFrame(loop);
-            }
-            loop();
-        })();
-    </script>
-</body>
-</html>
+ <div class="doom-area">
+    <div class="doom-title">🎮 DOOM</div>
+    <iframe 
+        src="https://archive.org/embed/doom_1993" 
+        width="100%" 
+        height="480" 
+        frameborder="0" 
+        webkitallowfullscreen="true" 
+        mozallowfullscreen="true" 
+        allowfullscreen
+        style="border-radius:12px;border:1px solid rgba(212,175,55,0.2);">
+    </iframe>
+</div>
